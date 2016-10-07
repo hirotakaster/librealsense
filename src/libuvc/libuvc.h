@@ -7,7 +7,11 @@ extern "C" {
 
 #include <stdio.h> // FILE
 #include <errno.h>
+#ifdef ANDROID
+#include <libusb.h>
+#else
 #include <libusb-1.0/libusb.h>
+#endif
 #include "libuvc_config.h"
     
 /** UVC error types, based on libusb errors
