@@ -67,11 +67,10 @@ LOCAL_EXPORT_C_INCLUDES := \
   $(LIBUSB_PATH)/libusb/ \
   $(LIBUSB_PATH)/libusb/os
 
-LOCAL_LDLIBS := -llog  -L/home/niisato/work/android-ndk-r12b/tmp/libusb/android/libs/arm64-v8a/
+LOCAL_LDLIBS := -llog
 
 LOCAL_MODULE := librealsense1.0
 LOCAL_ARM_NEON := true
-#NDK_MODULE_PATH := /home/niisato/work/android-ndk-r12b/tmp/libusb/android/jni/
 LOCAL_SHARED_LIBRARIES := usb1.0
 LOCAL_CPPFLAGS += -fexceptions -frtti -DRS_USE_V4L2_BACKEND
 
