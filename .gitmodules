@@ -1,0 +1,3 @@
+[submodule "android/jni/libusb"]
+	path = android/jni/libusb
+	url = https://github.com/libusb/libusb/
